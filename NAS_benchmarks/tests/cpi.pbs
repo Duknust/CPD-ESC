@@ -1,0 +1,32 @@
+##!/bin/bash
+#PBS -l walltime=05:00:00
+#PBS-j oe
+#PBS -N a
+#PBS -lnodes=10:ppn2
+cat $PBS_NODEFILE
+
+#module add gnu/4.9.0
+
+cd ~/NPB3.3.1/NPB_tests/
+
+echo "GCC 4.9.0 ##########################"
+#SER
+echo "serial now --------------------------------------"
+cd SERIAL
+./script_serial.sh
+cd ..
+
+echo "mpi now -----------------------------------------"
+cd MPI
+./script_mpi.sh
+cd ..
+
+echo "omp now -----------------------------------------"
+cd OMP
+./script_omp.sh
+cd ..
+
+
+cd ..
+
+#cat /proc/cpuinfo
