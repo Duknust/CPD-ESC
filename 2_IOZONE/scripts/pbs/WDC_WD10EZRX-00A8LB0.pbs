@@ -1,0 +1,8 @@
+##!/bin/bash
+#PBS -l walltime=03:00:00
+#PBS -j oe
+#PBS -N IOZONE
+cd ~/esc_iozone/
+
+/opt/iozone/bin/iozone -Ra -b WDC_WD10EZRX-00A8LB0-normal.xls -f WDC_WD10EZRX-00A8LB0-ntmp.tmp
+/opt/iozone/bin/iozone -Ra -g 8G -b WDC_WD10EZRX-00A8LB0-128.xls -f WDC_WD10EZRX-00A8LB0-1tmp.tmp

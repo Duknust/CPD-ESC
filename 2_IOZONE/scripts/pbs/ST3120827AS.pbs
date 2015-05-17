@@ -1,0 +1,8 @@
+##!/bin/bash
+#PBS -l walltime=08:00:00
+#PBS -j oe
+#PBS -N IOZONE
+cd ~/esc_iozone/
+
+/opt/iozone/bin/iozone -Ra -b ST3120827AS-normal.xls -f ST3120827AS-ntmp.tmp
+/opt/iozone/bin/iozone -Ra -g 8G -b ST3120827AS-128.xls -f ST3120827AS-1tmp.tmp

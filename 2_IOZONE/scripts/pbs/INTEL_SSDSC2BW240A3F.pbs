@@ -1,0 +1,8 @@
+##!/bin/bash
+#PBS -l walltime=03:00:00
+#PBS -j oe
+#PBS -N IOZONE
+cd ~/esc_iozone/
+
+/opt/iozone/bin/iozone -Ra -b INTEL_SSDSC2BW240A3F-normal.xls -f INTEL_SSDSC2BW240A3F-ntmp.tmp
+/opt/iozone/bin/iozone -Ra -g 8G -b INTEL_SSDSC2BW240A3F-128.xls -f INTEL_SSDSC2BW240A3F-1tmp.tmp

@@ -1,0 +1,8 @@
+##!/bin/bash
+#PBS -l walltime=08:00:00
+#PBS -j oe
+#PBS -N IOZONE
+cd ~/esc_iozone/
+
+/opt/iozone/bin/iozone -Ra -b MB0500EBNCR-normal.xls -f MB0500EBNCR-ntmp.tmp
+/opt/iozone/bin/iozone -Ra -g 8G -b MB0500EBNCR-128.xls -f MB0500EBNCR-1tmp.tmp

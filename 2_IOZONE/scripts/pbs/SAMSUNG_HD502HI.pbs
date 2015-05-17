@@ -1,0 +1,8 @@
+##!/bin/bash
+#PBS -l walltime=03:00:00
+#PBS -j oe
+#PBS -N IOZONE
+cd ~/esc_iozone/
+
+/opt/iozone/bin/iozone -Ra -b SAMSUNG_HD502HI-normal.xls -f SAMSUNG_HD502HI-ntmp.tmp
+/opt/iozone/bin/iozone -Ra -g 8G -b SAMSUNG_HD502HI-128.xls -f SAMSUNG_HD502HI-1tmp.tmp
