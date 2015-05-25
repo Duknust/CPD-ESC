@@ -1,0 +1,7 @@
+##!/bin/bash
+#PBS -l walltime=18:00:00
+#PBS -j oe
+#PBS -N IOZONE10150
+cd ~/esc_iozone/testingStrace
+
+strace -T -ttt -o strace.out /opt/iozone/bin/iozone -R -i0 -i1 -i2 -i5 -b -g 1G 
