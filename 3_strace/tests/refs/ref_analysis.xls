@@ -1,0 +1,31 @@
+Analysis Output 
+=============== 
+
+Number of Lines in strace file: 323500 
+
+----------------
+-- Time Stats --
+----------------
+Elapsed Time for run: 172.335752 (secs) 
+Total IO Time: 161.151279 (secs) 
+Total IO Time Counter: 323107 
+   Percentage of Total Time = 93.510068% 
+ 
+
+---------------------- 
+-- IO Command Count -- 
+---------------------- 
+Command          Count
+==============================
+access               1 
+lseek            95254 
+stat               352 
+unlink             234 
+open               941 
+close             1175 
+creat              117 
+fstat                6 
+fsync             1404 
+read            126931 
+write            96692 
+ 
