@@ -1,0 +1,9 @@
+cpu-clock
+task-clock
+page-faults
+context-switches 
+cpu-migrations
+minor-faults
+major-faults
+alignment-faults
+emulation-faults

@@ -1,0 +1,10 @@
+cpu-cycles 
+instructions
+cache-references
+cache-misses
+branch-instructions OR branches
+branch-misses
+bus-cycles
+stalled-cycles-frontend OR idle-cycles-frontend
+stalled-cycles-backend OR idle-cycles-backend
+ref-cycles
